@@ -69,6 +69,10 @@ button{
         visibility: hidden;
         display:none;
     }
+    button:hover{
+        cursor: pointer;
+        background-color: hsl(158, 44%, 27%);
+    }
 }
 @media(max-width: 991px) and (min-width:768px){
     .main-content{        
@@ -112,6 +116,16 @@ button{
 
     }
     #text-info p,#pricetable{
-        padding:10px;
+        padding:25px 30px; 
+    }
+    #pricetable{
+        padding-bottom:15px;
+    }
+    #text-info .btn{
+        padding-top:5px;
+    }
+    button{
+        height:50px;
+        font-size:1.2em;
     }
 }
