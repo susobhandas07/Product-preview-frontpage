@@ -11,7 +11,7 @@ body{
     font-family:
     'Montserrat', sans-serif;
     font-weight:400;
-    margin:50px auto;
+    margin:7% auto 30px;
 }
 .column{
     flex:50%;
@@ -60,24 +60,10 @@ button{
 .attribution{
     clear:both;
 }
-@media(min-width: 992px){
-    .main-content{
-        width:700px;
-        height:525px;
-    }
-    #visible-s{
-        visibility: hidden;
-        display:none;
-    }
-    button:hover{
-        cursor: pointer;
-        background-color: hsl(158, 44%, 27%);
-    }
-}
-@media(max-width: 991px) and (min-width:768px){
+@media(min-width:768px){
     .main-content{        
-        width:600px;
-        height:450px;
+        width:560px;
+        height:420px;
     }
     #visible-s{
         visibility: hidden;
@@ -85,13 +71,23 @@ button{
     }
     #text-info p,#pricetable{
         margin:0px;
-        padding:16px 12px;
+        padding:13px 12px;
     }
     #name{
         font-size: 2.5em;
     }
     #price{
         font-size:2.1em;
+    }
+    #text-info .btn{
+        padding-top:7px;
+    }
+    button{
+        height:40px;
+    }
+    button:hover{
+        background-color:hsl(158, 50%, 27%);
+        cursor: pointer;
     }
 }
 @media(max-width:767px){
